@@ -1,0 +1,22 @@
+.active {
+  width: 250px;
+  height: 30px;
+  background: white;
+  border: .2px solid black;
+  z-index: 999;
+  position: absolute;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.active::before {
+  content: " ";
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid white;
+  z-index: 1000;
+  top: -30%;
+  left: 10%;
+}
